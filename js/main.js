@@ -42,7 +42,7 @@ var configs = (function () {
         accesible_cores: "Accessible cores",
         language: "Language",
         value_token: "<value>",
-        host: "jiakang.app",
+        host: "ideawolf.github.io",
         user: "guest",
         is_root: false,
         type_delay: 20
@@ -67,8 +67,8 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "contact.txt": "EMAIL: jiakang@protonmail.com",
-        "github.txt": "https://github.com/ji-a-kang",
+        "contact.txt": "EMAIL: ideawolf@protonmail.com",
+        "github.txt": "https://github.com/ideawolf",
         "license.txt": "fake-terminal-website(Luís Bragança)"
     };
     return {
@@ -90,15 +90,15 @@ var main = (function () {
         event.preventDefault();
         event.stopPropagation();
     };
-    
+
     var scrollToBottom = function () {
         window.scrollTo(0, document.body.scrollHeight);
     };
-    
+
     var isURL = function (str) {
         return (str.startsWith("http") || str.startsWith("www")) && str.indexOf(" ") === -1 && str.indexOf("\n") === -1;
     };
-    
+
     /**
      * Model
      */
